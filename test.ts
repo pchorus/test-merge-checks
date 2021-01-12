@@ -1,1 +1,5 @@
-class TestIt{}
+class TestIt{
+  change = false;
+}
+
+// new changes
