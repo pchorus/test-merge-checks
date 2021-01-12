@@ -1,0 +1,14 @@
+name: Merge checks
+
+on:
+  pull_request:
+    types: [synchronize]
+
+jobs:
+  merge-checks:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Merge checks
+        uses: moneymeets/action-merge-checks@feature/merge-checks
